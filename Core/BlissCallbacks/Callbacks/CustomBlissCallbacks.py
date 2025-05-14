@@ -13,7 +13,7 @@ def _calculate_common_metrics(
 ) -> dict[str, float]:
     common_metrics_values = dict()
     for name, metric in common_metrics.items():
-        common_metrics_values[name] = metric(yb, outputs)
+        common_metrics_values[name] = metric(outputs, yb)
     return common_metrics_values
 
 ################### Common metrics Callback ###################
